@@ -37,12 +37,12 @@ class Api2 extends MY_Controller{
 		$db = $this->getMongoConn();
 		$c1 = $db->jhs_user;
 		$arr = array('username'=>$username,
-					  'password'=>md5($password . $this->key),
+					  'password'=>$password,
 		);
 		$rst = $c1->find($arr)->count();
 		if($rst == 0){
 			$arr = array('mobile'=>$username,
-						  'password'=>md5($password . $this->key),
+						  'password'=>$password,
 			);
 			$rst = $c1->find($arr)->count();
 		}
@@ -342,7 +342,7 @@ class Api2 extends MY_Controller{
 		$c1 = $db->jhs_accounting;
 		$keys = array('userId' => 1);  
 		$initial = array('money' => 0);  
-		$reduce = 'function (obj, prev) { prev.money = parseFloat(obj.money) + parseFloat(prev.money) }';  
+		$reduce = 'function (obj, prev) { prev.money = obj.money + prev.money }';
 		$condition = array('condition' => array('is_checkout' => 0, 'appId' => $appId));  
 		$rst = $c1->group($keys, $initial, $reduce, $condition); 
 		$result_data = array();
@@ -461,7 +461,8 @@ class Api2 extends MY_Controller{
 		}
 		
 		// 看是否还有下一页
-		$other_data['has_next_page'] = 1;
+		$other_data['has_next_page'] = 1;g
+		$other_data['datatype'] = $datatype;
 		if ($datatype == 'old' && $id != '-1'){
 			$next_arr += array('accountId'=>array('$lt'=>intval($id)));
 			$sum = $c1->find($next_arr)->count();
@@ -498,7 +499,7 @@ class Api2 extends MY_Controller{
 		
 		// -------------------------提交数据------------------
 		$c1 = $db->jhs_account;
-		$arr = array('money'=>$money, 
+		$arr = array('money'=>$money+0,
 					 'uids'=>$uids, 
 					 'time'=>$time,
 					 'remark'=>$remark,
@@ -533,7 +534,7 @@ class Api2 extends MY_Controller{
 		// 添加自己的进帐
 		$arr = array(
 				 'userId'=>$userId, 
-				 'money'=>$money,
+				 'money'=>$money+0,
 				 'is_checkout'=>0,
 				 'time'=>$time,
 				 'accountId'=>$accountId,
