@@ -461,7 +461,7 @@ class Api2 extends MY_Controller{
 		}
 		
 		// 看是否还有下一页
-		$other_data['has_next_page'] = 1;g
+		$other_data['has_next_page'] = 1;
 		$other_data['datatype'] = $datatype;
 		if ($datatype == 'old' && $id != '-1'){
 			$next_arr += array('accountId'=>array('$lt'=>intval($id)));
