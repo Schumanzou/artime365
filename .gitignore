@@ -1,0 +1,6 @@
+/app/configs/config.php
+/app/configs/application.ini
+/upload/
+/app/cache/
+.idea/
+.DS_Store
