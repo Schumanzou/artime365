@@ -63,6 +63,23 @@ class Api extends MY_Controller{
         $this->load->view('api/detail');
     }
 
+
+    /**
+     * html5页面
+     * @param $id
+     */
+    function code($id){
+        if (!$id){
+            $this->json(array(), -1, '不合法的请求');
+        }
+        $this->load->database();
+        $query = $this->db->get_where('tbl_audio', array('count_id' => $id), 1, 0);
+        $row = $query->row();
+        $this->load->vars("row", $row);
+        $this->load->view('api/code');
+    }
+
+
     // 返回json数据
     function json($data = array(), $result = 'ok', $message = '', $other_data = array()){
         $result = array('result'=>''.$result, 'message'=>$message, 'data'=>$data);
