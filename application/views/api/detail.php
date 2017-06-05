@@ -11,7 +11,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="/static/css/x-admin.css" media="all">
-    <link rel="stylesheet" href="/static/css/app.css" media="all">
     <link rel="stylesheet" href="/static/lib/fontello/css/fontello.css" media="all">
 </head>
 <body>
@@ -24,7 +23,8 @@
     </fieldset>
 
     <p>
-        <i class="icon-king text-info"></i>
+        <i class="pause"></i>
+        <i class="play-circled"></i>
         <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
         </audio>
         <input id='btnPlay' type="button" onClick="playFn()" value="播放" />
