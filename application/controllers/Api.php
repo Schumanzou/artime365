@@ -43,6 +43,7 @@ class Api extends MY_Controller{
         $this->db->select('id');
         $query = $this->db->get_where('tbl_audio', array('id' => $id), 1, 0);
         $row = $query->row();
+        var_dump($row);
         $this->load->vars("row", $row);
         $this->load->view('api/detail');
     }

@@ -15,7 +15,7 @@
 <body>
 <div class="x-body">
     <blockquote class="layui-elem-quote">
-        您是第<?php echo $row.count_id?>次分享
+        您是第<?php echo $row["count_id"]?>次分享
     </blockquote>
     <fieldset class="layui-elem-field layui-field-title site-title">
         <legend><a name="default">视频播放</a></legend>
