@@ -12,6 +12,9 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="/static/css/x-admin.css" media="all">
     <link rel="stylesheet" href="/static/lib/fontello/css/fontello.css" media="all">
+    <style type="text/css">
+        .icon-play-circled, .icon-pause-circled {font-size: 200%;}
+    </style>
 </head>
 <body>
 <div class="x-body">
