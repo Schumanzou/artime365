@@ -24,7 +24,7 @@
     <p>
         <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
         </audio>
-        <input id='btnPlay' type="button" onClick="playFn()" value="播放" style="width: 40px;" />
+        <input id='btnPlay' type="button" onClick="playFn()" value="播放" />
         　　<script>
             function playFn(){
                 var audio=document.getElementById('audio');
