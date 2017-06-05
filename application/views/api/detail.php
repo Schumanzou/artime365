@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/static/css/x-admin.css" media="all">
     <link rel="stylesheet" href="/static/lib/fontello/css/fontello.css" media="all">
     <style type="text/css">
-        .icon-play-circled, .icon-pause-circled {font-size: 200%;}
+        .icon-play-circled, .icon-pause-circled {font-size: 250%;}
     </style>
 </head>
 <body>
