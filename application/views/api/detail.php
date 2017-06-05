@@ -23,7 +23,7 @@
     </fieldset>
 
     <p>
-        <i class="icon-pause"></i>
+        <i class="icon-pause-circled"></i>
         <i class="icon-play-circled"></i>
         <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
         </audio>
