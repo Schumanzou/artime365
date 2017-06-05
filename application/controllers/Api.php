@@ -29,18 +29,25 @@ class Api extends MY_Controller{
         );
 
         $this->db->insert('tbl_audio', $data);
-        $this->json(array('ranking'=>$ranking));
+        //$this->json(array('ranking'=>$ranking));
+
         // 返回二维码
         // <img src="http://qr.topscan.com/api.php?bg=f3f3f3&fg=ff0000&gc=222222&el=l&w=200&m=10&text=http://www.topscan.com"/>
-
+        $content = file_get_contents("http://qr.topscan.com/api.php?bg=f3f3f3&fg=ff0000&gc=222222&el=l&w=200&m=10&text=http://cooperation.artime365.com/api/detail/".$ranking);
+        echo $content;
+        exit;
 	}
 
+    /**
+     * html5页面
+     * @param $id
+     */
 	function detail($id){
         if (!$id){
             $this->json(array(), -1, '不合法的请求');
         }
         $this->load->database();
-        $query = $this->db->get_where('tbl_audio', array('id' => $id), 1, 0);
+        $query = $this->db->get_where('tbl_audio', array('count_id' => $id), 1, 0);
         $row = $query->row();
         $this->load->vars("row", $row);
         $this->load->view('api/detail');
