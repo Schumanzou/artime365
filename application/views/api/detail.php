@@ -24,20 +24,26 @@
 
     <p>
         <i class="icon-pause-circled"></i>
-        <i class="icon-play-circled"></i>
+
         <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
         </audio>
-        <input id='btnPlay' type="button" onClick="playFn()" value="播放" />
+        <i class="icon-play-circled" id="i_start" onclick="playFn()"></i>
+        <i class="icon-pause-circled" id="i_stop" onclick="playFn()" style="display: none;"></i>
+        <input type="hidden" id="btnPlay" value="播放"/>
         　　<script>
             function playFn(){
                 var audio=document.getElementById('audio');
                 if (document.getElementById('btnPlay').value =="播放") {
                     audio.play();
                     audio.loop=true;
-                    document.getElementById('btnPlay').value='暂停'
+                    document.getElementById('btnPlay').value='暂停';
+                    document.getElementById('i_start').attributes("style", "display:none;");
+                    document.getElementById('i_stop').attributes("style", "display:block;");
                 }else{
                     audio.pause();
-                    document.getElementById('btnPlay').value='播放'
+                    document.getElementById('btnPlay').value='播放';
+                    document.getElementById('i_start').attributes("style", "display:block;");
+                    document.getElementById('i_stop').attributes("style", "display:none;");
                 }
             }
         </script>
