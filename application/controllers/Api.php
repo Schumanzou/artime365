@@ -30,7 +30,14 @@ class Api extends MY_Controller{
 
         $this->db->insert('tbl_audio', $data);
         $this->json(array('ranking'=>$ranking));
+        // 返回二维码
+        // <img src="http://qr.topscan.com/api.php?bg=f3f3f3&fg=ff0000&gc=222222&el=l&w=200&m=10&text=http://www.topscan.com"/>
+
 	}
+
+	function detail(){
+        $this->load->view('welcome_message');
+    }
 
     // 返回json数据
     function json($data = array(), $result = 'ok', $message = '', $other_data = array()){
