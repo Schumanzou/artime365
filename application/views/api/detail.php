@@ -24,7 +24,7 @@
     <p>
         <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
         </audio>
-        <input id='btnPlay' type="button" onClick="playFn()" value="播放" />
+        <input id='btnPlay' type="button" onClick="playFn()" value="播放" style="width: 80px;" />
         　　<script>
             function playFn(){
                 var audio=document.getElementById('audio');
@@ -33,7 +33,7 @@
                     audio.loop=true;
                     document.getElementById('btnPlay').value='暂停'
                 }else{
-                    audio1.pause();
+                    audio.pause();
                     document.getElementById('btnPlay').value='播放'
                 }
             }
