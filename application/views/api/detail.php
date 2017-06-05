@@ -22,7 +22,9 @@
     </fieldset>
 
     <p>
-        <?php echo $row->url?>
+        <audio src="<?php echo $row->url?>" controls="controls">
+        </audio>
+
     </p>
 </div>
 
