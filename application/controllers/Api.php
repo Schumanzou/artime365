@@ -28,7 +28,7 @@ class Api extends MY_Controller{
         $data = array(
             'count_id' => $ranking,
             'url' => $audioUrl,
-            'code_url' => $audioUrl,
+            'code_url' => $code_url,
         );
 
         $this->db->insert('tbl_audio', $data);
@@ -76,6 +76,7 @@ class Api extends MY_Controller{
         $query = $this->db->get_where('tbl_audio', array('count_id' => $id), 1, 0);
         $row = $query->row();
         $this->load->vars("row", $row);
+        $this->load->vars("host", 'http://'.$_SERVER['HTTP_HOST']);
         $this->load->view('api/code');
     }
 

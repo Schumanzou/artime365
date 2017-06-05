@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="x-body">
-    <img src="<?php echo $row->code_url?>"/>
+    <img src="<?php echo $host.$row->code_url?>"/>
 </div>
 
 </body>
