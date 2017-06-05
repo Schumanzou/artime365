@@ -12,8 +12,8 @@ class Api extends MY_Controller{
 		$this->load->database();
 
         $this->db->select('id');
-        $query = $this->db->get('tbl_audio', 1, 0);
-        $query = $this->db->order_by('id', 'DESC');
+        $query = $this->db->get('tbl_audio', 2, 0);
+        $this->db->order_by('id', 'DESC');
         foreach ($query->result() as $row)
         {
             echo $row->id;
