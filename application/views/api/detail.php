@@ -23,8 +23,8 @@
     </fieldset>
 
     <p>
-        <i class="pause"></i>
-        <i class="play-circled"></i>
+        <i class="icon-pause"></i>
+        <i class="icon-play-circled"></i>
         <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
         </audio>
         <input id='btnPlay' type="button" onClick="playFn()" value="播放" />
