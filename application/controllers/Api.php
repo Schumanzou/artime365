@@ -6,9 +6,8 @@ class Api extends MY_Controller{
 	function save(){
         $audioUrl = $this->input->post('record');
         if (trim($audioUrl) == ''){
-            //$this->json(array(), -1, '数据不合法');
-        }else{
             $audioUrl = 'http://www.artime365.com';
+            //$this->json(array(), -1, '数据不合法');
         }
 
 		$this->load->database();
