@@ -18,12 +18,26 @@
         您是第<?php echo $row->count_id?>次分享
     </blockquote>
     <fieldset class="layui-elem-field layui-field-title site-title">
-        <legend><a name="default">视频播放</a></legend>
+        <legend><a name="default">音频播放</a></legend>
     </fieldset>
 
     <p>
-        <audio src="<?php echo $row->url?>" controls="controls">
+        <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
         </audio>
+        <input id='btnPlay' type="button" onClick="playFn()" value="播放" />
+        　　<script>
+            function playFn(){
+                var audio=document.getElementById('audio');
+                if (document.getElementById('btnPlay').value =="播放") {
+                    audio.play();
+                    audio.loop=true;
+                    document.getElementById('btnPlay').value='暂停'
+                }else{
+                    audio1.pause();
+                    document.getElementById('btnPlay').value='播放'
+                }
+            }
+        </script>
 
     </p>
 </div>
