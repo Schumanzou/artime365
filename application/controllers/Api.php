@@ -7,44 +7,30 @@ class Api extends MY_Controller{
         $audioUrl = $this->input->post('record');
         if (trim($audioUrl) == ''){
             //$this->json(array(), -1, '数据不合法');
+        }else{
+            $audioUrl = 'http://www.artime365.com';
         }
 
 		$this->load->database();
 
         $this->db->select('id');
         $this->db->order_by('id', 'DESC');
-        $query = $this->db->get('tbl_audio', 2, 0);
+        $query = $this->db->get('tbl_audio', 1, 0);
+        $newId = 0;
         foreach ($query->result() as $row)
         {
-            echo $row->id;
+            $newId = $row->id;
+            break;
         }
 
-        /*$data = array(
-            'count_id' => '`id`+1000',
-            'name' => 'My Name',
-            'date' => 'My date'
-        );
-
-        $this->db->insert('tbl_audio', $data);
-
+        $ranking = $newId + 1000;
         $data = array(
-            'count_id' => '`id`+1000',
-            'name' => 'My Name',
-            'date' => 'My date'
+            'count_id' => $ranking,
+            'url' => $audioUrl
         );
 
         $this->db->insert('tbl_audio', $data);
-        // 添加
-        $query = $this->db->query('select * from tbl_audio');
-        if($query->num_rows()>0){
-            foreach($query->result() as $row){
-                echo "<br/>";
-                echo $row->userid;
-                echo $row->url;
-                echo $row->created;
-            }
-        }*/
-
+        $this->json(array('ranking'=>$ranking));
 	}
 
     // 返回json数据
