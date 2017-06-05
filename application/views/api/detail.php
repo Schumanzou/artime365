@@ -11,6 +11,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="/static/css/x-admin.css" media="all">
+    <link rel="stylesheet" href="/static/css/app.css" media="all">
     <link rel="stylesheet" href="/static/lib/fontello/fontello.css" media="all">
 </head>
 <body>
