@@ -22,25 +22,26 @@ class Api extends MY_Controller{
         }
 
         $ranking = $newId + 1000;
+        $file_name       = time().rand(100, 999).".png";
+        $code_url = "/uploads/small/".$file_name;
         $data = array(
             'count_id' => $ranking,
-            'url' => $audioUrl
+            'url' => $audioUrl,
+            'code_url' => $audioUrl,
         );
 
         $this->db->insert('tbl_audio', $data);
-        //$this->json(array('ranking'=>$ranking));
 
         // 返回二维码
         // <img src="http://qr.topscan.com/api.php?bg=f3f3f3&fg=ff0000&gc=222222&el=l&w=200&m=10&text=http://www.topscan.com"/>
         $content = file_get_contents("http://qr.topscan.com/api.php?bg=f3f3f3&fg=ff0000&gc=222222&el=l&w=200&m=10&text=http://cooperation.artime365.com/api/detail/".$ranking);
 
         $upload_path      = './uploads/small/';
-        $file_name       = time().rand(100, 999).".png";
         $pic_path = $upload_path.$file_name;
         $img_write_fd = fopen($pic_path, "w");
         fwrite($img_write_fd, $content);
         fclose($img_write_fd);
-        $this->json(array('ranking'=>$ranking, "url"=>"http://".$_SERVER['HTTP_HOST']."/uploads/small/".$file_name));
+        $this->json(array('ranking'=>$ranking, "url"=>"http://".$_SERVER['HTTP_HOST'].$code_url));
 	}
 
     /**
