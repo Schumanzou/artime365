@@ -23,7 +23,7 @@ class Api extends MY_Controller{
 
         $ranking = $newId + 1000;
         $file_name       = time().rand(100, 999).".png";
-        $code_url = "/uploads/small/".$file_name;
+        $code_url = "/uploads/small/".date('Ym').'/'.$file_name;
         $data = array(
             'count_id' => $ranking,
             'url' => $audioUrl,
@@ -36,7 +36,10 @@ class Api extends MY_Controller{
         // <img src="http://qr.topscan.com/api.php?bg=f3f3f3&fg=ff0000&gc=222222&el=l&w=200&m=10&text=http://www.topscan.com"/>
         $content = file_get_contents("http://qr.topscan.com/api.php?bg=f3f3f3&fg=ff0000&gc=222222&el=l&w=200&m=10&text=http://cooperation.artime365.com/api/detail/".$ranking);
 
-        $upload_path      = './uploads/small/';
+        $upload_path      = './uploads/small/'.date('Ym').'/';
+        if (!file_exists($upload_path)) {
+            mkdir($upload_path);
+        }
         $pic_path = $upload_path.$file_name;
         $img_write_fd = fopen($pic_path, "w");
         fwrite($img_write_fd, $content);
