@@ -23,8 +23,6 @@
     </fieldset>
 
     <p>
-        <i class="icon-pause-circled"></i>
-
         <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
         </audio>
         <i class="icon-play-circled" id="i_start" onclick="playFn()"></i>
@@ -37,13 +35,13 @@
                     audio.play();
                     audio.loop=true;
                     document.getElementById('btnPlay').value='暂停';
-                    document.getElementById('i_start').attributes("style", "display:none;");
-                    document.getElementById('i_stop').attributes("style", "display:block;");
+                    document.getElementById('i_start').setAttribute("style", "display:none;");
+                    document.getElementById('i_stop').setAttribute("style", "display:block;");
                 }else{
                     audio.pause();
                     document.getElementById('btnPlay').value='播放';
-                    document.getElementById('i_start').attributes("style", "display:block;");
-                    document.getElementById('i_stop').attributes("style", "display:none;");
+                    document.getElementById('i_start').setAttribute("style", "display:block;");
+                    document.getElementById('i_stop').setAttribute("style", "display:none;");
                 }
             }
         </script>
