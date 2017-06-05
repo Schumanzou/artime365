@@ -33,7 +33,7 @@ class Api extends MY_Controller{
             'date' => 'My date'
         );
 
-        $this->db->insert('tbl_audio', $data);*/
+        $this->db->insert('tbl_audio', $data);
         // 添加
         $query = $this->db->query('select * from tbl_audio');
         if($query->num_rows()>0){
@@ -43,7 +43,7 @@ class Api extends MY_Controller{
                 echo $row->url;
                 echo $row->created;
             }
-        }
+        }*/
 
 	}
 

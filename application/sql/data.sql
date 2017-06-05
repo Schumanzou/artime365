@@ -10,9 +10,8 @@ CREATE TABLE IF NOT EXISTS `tbl_audio` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `count_id` int(11) NOT NULL DEFAULT '0' COMMENT '计数ID',
   `url` varchar(300) NOT NULL COMMENT 'url',
-  `created` datetime NOT NULL COMMENT '发表时间',
-  `createdip` varchar(16) DEFAULT '0.0.0.0' COMMENT '提交IP',
   PRIMARY KEY (`id`)
 ) DEFAULT CHARSET=utf8;
 
-insert into tbl_audio (count_id, url, created) values (1000, 'http://www.jd.com', '2017-06-05');
+insert into tbl_audio (count_id, url) values (1000, 'http://www.jd.com');
+insert into tbl_audio (count_id, url) values (1001, 'http://www.jd.com');
