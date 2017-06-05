@@ -35,7 +35,15 @@ class Api extends MY_Controller{
 
 	}
 
-	function detail(){
+	function detail($id){
+        if (!$id){
+            $this->json(array(), -1, '不合法的请求');
+        }
+        $this->load->database();
+        $this->db->select('id');
+        $query = $this->db->get_where('tbl_audio', array('id' => $id), 1, 0);
+        $row = $query->row();
+        $this->load->vars("row", $row);
         $this->load->view('api/detail');
     }
 
