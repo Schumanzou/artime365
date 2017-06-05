@@ -41,7 +41,7 @@ class Api extends MY_Controller{
         $img_write_fd = fopen($pic_path, "w");
         fwrite($img_write_fd, $content);
         fclose($img_write_fd);
-        exit;
+        $this->json(array('ranking'=>$ranking, "url"=>$_SERVER['REQUEST_URI']."/uploads/small/".$file_name));
 	}
 
     /**
