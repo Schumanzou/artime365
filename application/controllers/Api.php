@@ -36,7 +36,7 @@ class Api extends MY_Controller{
 	}
 
 	function detail(){
-        $this->load->view('welcome_message');
+        $this->load->view('api/detail');
     }
 
     // 返回json数据
