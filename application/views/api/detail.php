@@ -18,18 +18,21 @@
 </head>
 <body>
 <div class="x-body">
-    <blockquote class="layui-elem-quote">
-        您是第<?php echo $row->count_id?>次分享
-    </blockquote>
-    <fieldset class="layui-elem-field layui-field-title site-title">
-        <legend><a name="default">音频播放</a></legend>
-    </fieldset>
+    <div class="x-nav" style="border:0px;">
+        第 <?php echo $row->count_id?> 位
+        <div class="x-right">
+            <i class="icon-play-circled" id="i_start" onclick="playFn()"></i>
+            <i class="icon-pause-circled" id="i_stop" onclick="playFn()" style="display: none;"></i>
+        </div>
+    </div>
+
+    <div>
+        <img src="/static/images/bj.jpg" style="width: 100%"/>
+    </div>
 
     <p>
         <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
         </audio>
-        <i class="icon-play-circled" id="i_start" onclick="playFn()"></i>
-        <i class="icon-pause-circled" id="i_stop" onclick="playFn()" style="display: none;"></i>
         <input type="hidden" id="btnPlay" value="播放"/>
         　　<script>
             function playFn(){
