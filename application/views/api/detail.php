@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="/static/css/x-admin.css" media="all">
     <link rel="stylesheet" href="/static/lib/fontello/css/fontello.css" media="all">
     <style type="text/css">
-        .icon-play-circled, .icon-pause-circled {font-size: 250%;}
+        .icon-play-circled, .icon-pause-circled {font-size: 200%;}
     </style>
 </head>
 <body>
 <div class="x-body">
-    <div class="x-nav" style="border:0px;">
+    <div class="x-nav" style="border:0px;font-size:140%;margin-bottom:10px;">
         第 <?php echo $row->count_id?> 位
         <div class="x-right">
             <i class="icon-play-circled" id="i_start" onclick="playFn()"></i>
