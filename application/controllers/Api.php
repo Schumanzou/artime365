@@ -26,7 +26,7 @@ class Api extends MY_Controller{
         $ranking = $newId + 1000;
         $file_name       = time().rand(100, 999).".png";
         $code_url = "/uploads/small/".date('Ym').'/'.$file_name;
-        $rankingMd5 = md5($code_url.self.$this->md5Key);
+        $rankingMd5 = md5($code_url.$this->md5Key);
         $data = array(
             'count_id' => $ranking,
             'url' => $audioUrl,
