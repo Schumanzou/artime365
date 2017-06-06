@@ -1,7 +1,8 @@
 <?php
 ini_set('date.timezone','Asia/Shanghai');
 class Api extends MY_Controller{
-	
+
+    public $md5Key = '!QAZ2wsx';
 
 	// 存储音频地址
 	function save(){
@@ -25,17 +26,19 @@ class Api extends MY_Controller{
         $ranking = $newId + 1000;
         $file_name       = time().rand(100, 999).".png";
         $code_url = "/uploads/small/".date('Ym').'/'.$file_name;
+        $rankingMd5 = md5($code_url.self.$this->md5Key);
         $data = array(
             'count_id' => $ranking,
             'url' => $audioUrl,
             'code_url' => $code_url,
+            'count_id_md5' => $rankingMd5,
         );
 
         $this->db->insert('tbl_audio', $data);
 
         // 返回二维码
         // <img src="http://qr.topscan.com/api.php?bg=f3f3f3&fg=ff0000&gc=222222&el=l&w=200&m=10&text=http://www.topscan.com"/>
-        $content = file_get_contents("http://qr.topscan.com/api.php?w=200&m=10&text=http://cooperation.artime365.com/api/detail/".$ranking);
+        $content = file_get_contents("http://qr.topscan.com/api.php?w=200&m=10&text=http://cooperation.artime365.com/api/detail/".$rankingMd5);
 
         $upload_path      = './uploads/small/'.date('Ym').'/';
         if (!file_exists($upload_path)) {
@@ -57,7 +60,7 @@ class Api extends MY_Controller{
             $this->json(array(), -1, '不合法的请求');
         }
         $this->load->database();
-        $query = $this->db->get_where('tbl_audio', array('count_id' => $id), 1, 0);
+        $query = $this->db->get_where('tbl_audio', array('count_id_md5' => $id), 1, 0);
         $row = $query->row();
         $this->load->vars("row", $row);
         $this->load->view('api/detail');
