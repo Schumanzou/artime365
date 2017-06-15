@@ -21,13 +21,16 @@
     <div>
         <img src="/static/images/bg.jpg" width="100%">
     </div>
-    <div class="x-nav" style="border:0px;font-size:140%;margin-bottom:10px;padding:0px;position: absolute;top:50px;color: white;overflow: inherit;left:50px;line-height:30px;letter-spacing:6px; ">
+    <div class="x-nav" style="border:0px;font-size:140%;margin-bottom:10px;padding:0px;position: absolute;top:50px;color: white;overflow: inherit;left:30px;line-height:30px;letter-spacing:6px; ">
         <div>我是第<?php echo $row->count_id?>位为山区孩子读诗的人</div>
         <div>快来和我一起为爱读诗</div>
         <div class="x-right">
             <i class="icon-play-circled" id="i_start" onclick="playFn()"></i>
             <i class="icon-pause-circled" id="i_stop" onclick="playFn()" style="display: none;"></i>
         </div>
+    </div>
+    <div style="position: absolute;bottom:50px;">
+        我是尾部
     </div>
 
     <p>
