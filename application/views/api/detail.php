@@ -17,17 +17,13 @@
     </style>
 </head>
 <body>
-<div class="x-body">
+<div class="x-body" style="background-image: url('/static/images/bg.jpg')">
     <div class="x-nav" style="border:0px;font-size:140%;margin-bottom:10px;padding:0px;">
         第 <?php echo $row->count_id?> 位
         <div class="x-right">
             <i class="icon-play-circled" id="i_start" onclick="playFn()"></i>
             <i class="icon-pause-circled" id="i_stop" onclick="playFn()" style="display: none;"></i>
         </div>
-    </div>
-
-    <div>
-        <img src="/static/images/bj.jpg" style="width: 100%"/>
     </div>
 
     <p>
