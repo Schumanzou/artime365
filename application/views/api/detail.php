@@ -32,7 +32,7 @@
     <div style="position: absolute;top:3230px;left:85px;font-size:150%;font-weight:bold;letter-spacing:10px;">
         <a href="http://u.eqxiu.com/s/nE0Nb675" style="color: white">详细地址</a>
     </div>
-    <div style="position: absolute;top:3380px;left:75px;font-size:140%;">
+    <div style="position: absolute;top:3390px;left:75px;font-size:140%;">
         <a href="http://u.eqxiu.com/s/nE0Nb675" style="color: white;text-decoration: underline;">http://u.eqxiu.com/s/nE0Nb675</a>
     </div>
 
