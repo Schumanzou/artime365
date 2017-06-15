@@ -29,10 +29,10 @@
             <i class="icon-pause-circled" id="i_stop" onclick="playFn()" style="display: none;"></i>
         </div>
     </div>
-    <div style="position: absolute;top:3200px;left:85px;font-size:150%;font-weight:bold;letter-spacing:10px;">
+    <div style="position: absolute;top:3230px;left:85px;font-size:150%;font-weight:bold;letter-spacing:10px;">
         <a href="http://u.eqxiu.com/s/nE0Nb675" style="color: white">详细地址</a>
     </div>
-    <div style="position: absolute;top:3375px;left:75px;font-size:140%;">
+    <div style="position: absolute;top:3380px;left:75px;font-size:140%;">
         <a href="http://u.eqxiu.com/s/nE0Nb675" style="color: white;text-decoration: underline;">http://u.eqxiu.com/s/nE0Nb675</a>
     </div>
 
