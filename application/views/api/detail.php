@@ -29,7 +29,7 @@
             <i class="icon-pause-circled" id="i_stop" onclick="playFn()" style="display: none;"></i>
         </div>
     </div>
-    <div style="position: absolute;top:2800px;left:75px;font-size:120%;font-weight:bold;letter-spacing:6px;">
+    <div style="position: absolute;top:2805px;left:75px;font-size:120%;font-weight:bold;letter-spacing:6px;">
         <a href="http://u.eqxiu.com/s/nE0Nb675" style="color: white">详细地址</a>
     </div>
     <div style="position: absolute;top:2940px;left:65px;font-size:140%;">
