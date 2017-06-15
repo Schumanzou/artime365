@@ -17,7 +17,10 @@
     </style>
 </head>
 <body>
-<div class="x-body" style="background-image: url('/static/images/bg.jpg')">
+<div class="x-body">
+    <div>
+        <img src="/static/images/bg.jpg"/>
+    </div>
     <div class="x-nav" style="border:0px;font-size:140%;margin-bottom:10px;padding:0px;">
         第 <?php echo $row->count_id?> 位
         <div class="x-right">
