@@ -17,12 +17,13 @@
     </style>
 </head>
 <body>
-<div class="x-body">
+<div>
     <div>
-        <img src="/static/images/bg.jpg"/>
+        <img src="/static/images/bg.jpg" width="100%">
     </div>
-    <div class="x-nav" style="border:0px;font-size:140%;margin-bottom:10px;padding:0px;">
-        第 <?php echo $row->count_id?> 位
+    <div class="x-nav" style="border:0px;font-size:140%;margin-bottom:10px;padding:0px;position: absolute;top:0px;">
+        我是第<?php echo $row->count_id?>位为山区孩子说干读诗的人<br/>
+        快来和我一起为爱读诗
         <div class="x-right">
             <i class="icon-play-circled" id="i_start" onclick="playFn()"></i>
             <i class="icon-pause-circled" id="i_stop" onclick="playFn()" style="display: none;"></i>
