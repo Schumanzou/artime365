@@ -29,11 +29,11 @@
             <i class="icon-pause-circled" id="i_stop" onclick="playFn()" style="display: none;"></i>
         </div>
     </div>
-    <div style="position: absolute;top:9000px;left:250px;color:white;font-size:200%;font-weight:bold;letter-spacing:10px;">
-        <a href="http://u.eqxiu.com/s/nE0Nb675">详细地址</a>
+    <div style="position: absolute;top:8990px;left:295px;font-size:300%;font-weight:bold;letter-spacing:10px;">
+        <a href="http://u.eqxiu.com/s/nE0Nb675" style="color: white">详细地址</a>
     </div>
-    <div style="position: absolute;top:9400px;left:250px;color:white;font-size:200%;font-weight:bold;letter-spacing:10px;">
-        <a href="http://u.eqxiu.com/s/nE0Nb675">http://u.eqxiu.com/s/nE0Nb675</a>
+    <div style="position: absolute;top:9430px;left:210px;font-size:300%;">
+        <a href="http://u.eqxiu.com/s/nE0Nb675" style="color: white">http://u.eqxiu.com/s/nE0Nb675</a>
     </div>
 
     <p>
