@@ -16,7 +16,7 @@
         .icon-play-circled, .icon-pause-circled {font-size: 200%;}
     </style>
 </head>
-<body style="display: block; height: 9600px;">
+<body style="display: block;">
 <div>
     <div>
         <img src="/static/images/bg.jpg" width="100%">
