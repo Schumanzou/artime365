@@ -16,7 +16,7 @@
         .icon-play-circled, .icon-pause-circled {font-size: 200%;}
     </style>
 </head>
-<body>
+<body style="display: block; height: 9600px;">
 <div>
     <div>
         <img src="/static/images/bg.jpg" width="100%">
@@ -29,8 +29,11 @@
             <i class="icon-pause-circled" id="i_stop" onclick="playFn()" style="display: none;"></i>
         </div>
     </div>
-    <div style="position: absolute;bottom:50px;">
-        我是尾部
+    <div style="position: absolute;top:9000px;left:250px;color:white;font-size:200%;font-weight:bold;letter-spacing:10px;">
+        <a href="http://u.eqxiu.com/s/nE0Nb675">详细地址</a>
+    </div>
+    <div style="position: absolute;top:9400px;left:250px;color:white;font-size:200%;font-weight:bold;letter-spacing:10px;">
+        <a href="http://u.eqxiu.com/s/nE0Nb675">http://u.eqxiu.com/s/nE0Nb675</a>
     </div>
 
     <p>
