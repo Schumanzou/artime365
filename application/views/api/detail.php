@@ -32,8 +32,8 @@
     <div style="position: absolute;top:8990px;left:295px;font-size:300%;font-weight:bold;letter-spacing:10px;">
         <a href="http://u.eqxiu.com/s/nE0Nb675" style="color: white">详细地址</a>
     </div>
-    <div style="position: absolute;top:9430px;left:210px;font-size:300%;">
-        <a href="http://u.eqxiu.com/s/nE0Nb675" style="color: white">http://u.eqxiu.com/s/nE0Nb675</a>
+    <div style="position: absolute;top:9425px;left:210px;font-size:300%;">
+        <a href="http://u.eqxiu.com/s/nE0Nb675" style="color: white;text-decoration: underline;">http://u.eqxiu.com/s/nE0Nb675</a>
     </div>
 
     <p>
