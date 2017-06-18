@@ -38,7 +38,7 @@
         <div class="f-l" style="width:53%"><img src="/static/images/2_07.png" width="100%"></div>
         <div class="f-l" style="width:47%;position: relative;">
             <img src="/static/images/2_08.png" width="100%">
-            <div style="font-size:140%;position: absolute;color: #ed3f00;letter-spacing:4px;font-weight: bold;bottom: 0;">
+            <div style="font-size:140%;position: absolute;color: #ed3f00;left: 50%;bottom: 0;">
                 <i class="icon-play-circled" id="i_start" onclick="playFn()"></i>
                 <i class="icon-pause-circled" id="i_stop" onclick="playFn()" style="display: none;"></i>
             </div>
