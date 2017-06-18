@@ -24,11 +24,11 @@
     </div>
     <div>
 
-        <div class="f-l" width="24%"><img src="/static/images/1_02.png" width="100%"></div>
-        <div class="f-l" width="30%" style="background: url(/static/images/1_03.png) no-repeat left top">
+        <div class="f-l" style="width:24%"><img src="/static/images/1_02.png" width="100%"></div>
+        <div class="f-l" style="width:30%;background: url(/static/images/1_03.png) no-repeat left top">
             <?php echo $row->count_id?>
         </div>
-        <div class="f-l" width="46%"><img src="/static/images/1_04.png" width="100%"></div>
+        <div class="f-l" style="width:46%"><img src="/static/images/1_04.png" width="100%"></div>
     </div>
     <div>
         <img src="/static/images/1_05.png" width="100%">
@@ -37,8 +37,8 @@
         <img src="/static/images/1_06.png" width="100%">
     </div>
     <div>
-        <div class="f-l" width="54%"><img src="/static/images/1_07.png" width="100%"></div>
-        <div class="f-l" width="46%"><img src="/static/images/1_08.png" width="100%"></div>
+        <div class="f-l" style="width:54%"><img src="/static/images/1_07.png" width="100%"></div>
+        <div class="f-l" style="width:46%"><img src="/static/images/1_08.png" width="100%"></div>
     </div>
     <div>
         <img src="/static/images/1_09.png" width="100%">
