@@ -25,9 +25,7 @@
     <div>
 
         <div class="f-l" style="width:24%"><img src="/static/images/1_02.png" width="100%"></div>
-        <div class="f-l" style="width:30%;background: url(/static/images/1_03.png) no-repeat left top">
-            <?php echo $row->count_id?>
-        </div>
+        <div class="f-l t-c" style="width:30%;"><img src="/static/images/1_03.png" width="100%"></div>
         <div class="f-l" style="width:46%"><img src="/static/images/1_04.png" width="100%"></div>
     </div>
     <div>
