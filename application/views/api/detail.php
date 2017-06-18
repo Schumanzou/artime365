@@ -20,7 +20,7 @@
 <body>
 <div>
     <div>
-        <img src="/static/images/1_01.png" width="100%">
+        <img src="/static/images/7_01.png" width="100%">
     </div>
     <div>
         <div class="f-l" style="width:30%"><img src="/static/images/7_02.png" width="100%"></div>
