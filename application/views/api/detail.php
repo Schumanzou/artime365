@@ -24,11 +24,11 @@
     </div>
     <div>
 
-        <div class="f-l" style="width:23%"><img src="/static/images/2_02.png" width="100%"></div>
-        <div class="f-l t-c" style="width:29%;position: relative;"><img src="/static/images/2_03.png" width="100%">
+        <div class="f-l" style="width:23%"><img src="/static/images/3_02.png" width="100%"></div>
+        <div class="f-l t-c" style="width:29%;position: relative;"><img src="/static/images/3_03.png" width="100%">
             <div style="font-size:140%;position: absolute;color: #ed3f00;letter-spacing:4px;font-weight: bold;top: -5px;left:40px;"><?php echo $row->count_id?></div>
         </div>
-        <div class="f-l" style="width:48%"><img src="/static/images/2_04.png" width="100%"></div>
+        <div class="f-l" style="width:48%"><img src="/static/images/3_04.png" width="100%"></div>
     </div>
     <div>
         <img src="/static/images/1_05.png" width="100%">
