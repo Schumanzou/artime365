@@ -24,9 +24,11 @@
     </div>
     <div>
 
-        <div class="f-l"><img src="/static/images/1_02.png" width="24%"></div>
-        <div class="f-l"><img src="/static/images/1_03.png" width="29.8%"></div>
-        <div class="f-l"><img src="/static/images/1_04.png" width="46.2%"></div>
+        <div class="f-l" width="24%"><img src="/static/images/1_02.png" width="100%"></div>
+        <div class="f-l" width="30%" style="background: url(/static/images/1_03.png) no-repeat left top">
+            <?php echo $row->count_id?>
+        </div>
+        <div class="f-l" width="46%"><img src="/static/images/1_04.png" width="100%"></div>
     </div>
     <div>
         <img src="/static/images/1_05.png" width="100%">
@@ -35,8 +37,8 @@
         <img src="/static/images/1_06.png" width="100%">
     </div>
     <div>
-        <img src="/static/images/1_07.png" width="53.8%">
-        <img src="/static/images/1_08.png" width="46.2%">
+        <div class="f-l" width="54%"><img src="/static/images/1_07.png" width="100%"></div>
+        <div class="f-l" width="46%"><img src="/static/images/1_08.png" width="100%"></div>
     </div>
     <div>
         <img src="/static/images/1_09.png" width="100%">
@@ -54,7 +56,7 @@
         <img src="/static/images/1_13.png" width="100%">
     </div>
     <!--<div class="x-nav" style="border:0px;font-size:140%;margin-bottom:10px;padding:0px;position: absolute;top:50px;color: white;overflow: inherit;left:20px; font-weight:bold; line-height:25px;letter-spacing:4px; ">
-        <div>我是第<?php echo $row->count_id?>位为山区孩子读诗的人</div>
+        <div>我是第位为山区孩子读诗的人</div>
         <div>快来和我一起为爱读诗</div>
         <div class="x-right">
             <i class="icon-play-circled" id="i_start" onclick="playFn()"></i>
