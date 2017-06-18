@@ -24,9 +24,9 @@
     </div>
     <div>
 
-        <div class="f-l" style="width:24%"><img src="/static/images/1_02.png" width="100%"></div>
-        <div class="f-l t-c" style="width:30%;"><img src="/static/images/1_03.png" width="100%"></div>
-        <div class="f-l" style="width:46%"><img src="/static/images/1_04.png" width="100%"></div>
+        <div class="f-l" style="width:23%"><img src="/static/images/2_02.png" width="100%"></div>
+        <div class="f-l t-c" style="width:29%;"><img src="/static/images/2_03.png" width="100%"></div>
+        <div class="f-l" style="width:48%"><img src="/static/images/2_04.png" width="100%"></div>
     </div>
     <div>
         <img src="/static/images/1_05.png" width="100%">
@@ -35,8 +35,8 @@
         <img src="/static/images/1_06.png" width="100%">
     </div>
     <div>
-        <div class="f-l" style="width:54%"><img src="/static/images/1_07.png" width="100%"></div>
-        <div class="f-l" style="width:46%"><img src="/static/images/1_08.png" width="100%"></div>
+        <div class="f-l" style="width:53%"><img src="/static/images/2_07.png" width="100%"></div>
+        <div class="f-l" style="width:47%"><img src="/static/images/2_08.png" width="100%"></div>
     </div>
     <div>
         <img src="/static/images/1_09.png" width="100%">
