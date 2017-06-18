@@ -20,11 +20,7 @@
 <body>
 <div>
     <div>
-        <img src="/static/images/1_01.png" width="100%">
-    </div>
-    <div style="position: relative;">
-        <img src="/static/images/5_02.png" width="100%">
-        <div style="font-size:140%;position: absolute;color: #ed3f00;letter-spacing:4px;font-weight: bold;top: -5px;left:40px;"><?php echo $row->count_id?></div>
+        <img src="/static/images/6_01.png" width="100%">
     </div>
     <div>
         <img src="/static/images/1_05.png" width="100%">
