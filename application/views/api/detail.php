@@ -11,17 +11,49 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="/static/css/x-admin.css" media="all">
+    <link rel="stylesheet" href="/static/css/app.css" media="all">
     <link rel="stylesheet" href="/static/lib/fontello/css/fontello.css" media="all">
     <style type="text/css">
         .icon-play-circled, .icon-pause-circled {font-size: 200%;}
     </style>
 </head>
-<body style="display:block; height: 2950px;">
+<body>
 <div>
     <div>
-        <img src="/static/images/bg.jpg" width="100%">
+        <img src="/static/images/1_01.png" width="100%">
     </div>
-    <div class="x-nav" style="border:0px;font-size:140%;margin-bottom:10px;padding:0px;position: absolute;top:50px;color: white;overflow: inherit;left:20px; font-weight:bold; line-height:25px;letter-spacing:4px; ">
+    <div>
+
+        <div class="f-l"><img src="/static/images/1_02.png" width="24%"></div>
+        <div class="f-l"><img src="/static/images/1_03.png" width="29.8%"></div>
+        <div class="f-l"><img src="/static/images/1_04.png" width="46.2%"></div>
+    </div>
+    <div>
+        <img src="/static/images/1_05.png" width="100%">
+    </div>
+    <div>
+        <img src="/static/images/1_06.png" width="100%">
+    </div>
+    <div>
+        <img src="/static/images/1_07.png" width="53.8%">
+        <img src="/static/images/1_08.png" width="46.2%">
+    </div>
+    <div>
+        <img src="/static/images/1_09.png" width="100%">
+    </div>
+    <div>
+        <a href="http://u.eqxiu.com/s/nE0Nb675"><img src="/static/images/1_10.png" width="100%"></a>
+    </div>
+    <div>
+        <img src="/static/images/1_11.png" width="100%">
+    </div>
+    <div>
+        <a href="http://u.eqxiu.com/s/nE0Nb675"><img src="/static/images/1_12.png" width="100%"></a>
+    </div>
+    <div>
+        <img src="/static/images/1_13.png" width="100%">
+    </div>
+    <!--<div class="x-nav" style="border:0px;font-size:140%;margin-bottom:10px;padding:0px;position: absolute;top:50px;color: white;overflow: inherit;left:20px; font-weight:bold; line-height:25px;letter-spacing:4px; ">
         <div>我是第<?php echo $row->count_id?>位为山区孩子读诗的人</div>
         <div>快来和我一起为爱读诗</div>
         <div class="x-right">
@@ -35,6 +67,7 @@
     <div style="position: absolute;top:2940px;left:65px;font-size:140%;">
         <a href="http://u.eqxiu.com/s/nE0Nb675" style="color: white;text-decoration: underline;">http://u.eqxiu.com/s/nE0Nb675</a>
     </div>
+    -->
 
     <p>
         <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
