@@ -59,44 +59,27 @@
     <div>
         <img src="/static/images/1_13.png" width="100%">
     </div>
-    <!--<div class="x-nav" style="border:0px;font-size:140%;margin-bottom:10px;padding:0px;position: absolute;top:50px;color: white;overflow: inherit;left:20px; font-weight:bold; line-height:25px;letter-spacing:4px; ">
-        <div>我是第位为山区孩子读诗的人</div>
-        <div>快来和我一起为爱读诗</div>
-        <div class="x-right">
-            <i class="icon-play-circled" id="i_start" onclick="playFn()"></i>
-            <i class="icon-pause-circled" id="i_stop" onclick="playFn()" style="display: none;"></i>
-        </div>
-    </div>
-    <div style="position: absolute;top:2805px;left:75px;font-size:120%;font-weight:bold;letter-spacing:6px;">
-        <a href="http://u.eqxiu.com/s/nE0Nb675" style="color: white">详细地址</a>
-    </div>
-    <div style="position: absolute;top:2940px;left:65px;font-size:140%;">
-        <a href="http://u.eqxiu.com/s/nE0Nb675" style="color: white;text-decoration: underline;">http://u.eqxiu.com/s/nE0Nb675</a>
-    </div>
-    -->
 
-    <p>
-        <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
-        </audio>
-        <input type="hidden" id="btnPlay" value="播放"/>
-        　　<script>
-            function playFn(){
-                var audio=document.getElementById('audio');
-                if (document.getElementById('btnPlay').value =="播放") {
-                    audio.play();
-                    audio.loop=true;
-                    document.getElementById('btnPlay').value='暂停';
-                    document.getElementById('i_start').setAttribute("style", "display:none;");
-                    document.getElementById('i_stop').setAttribute("style", "display:block;");
-                }else{
-                    audio.pause();
-                    document.getElementById('btnPlay').value='播放';
-                    document.getElementById('i_start').setAttribute("style", "display:block;");
-                    document.getElementById('i_stop').setAttribute("style", "display:none;");
-                }
+    <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
+    </audio>
+    <input type="hidden" id="btnPlay" value="播放"/>
+    　　<script>
+        function playFn(){
+            var audio=document.getElementById('audio');
+            if (document.getElementById('btnPlay').value =="播放") {
+                audio.play();
+                audio.loop=true;
+                document.getElementById('btnPlay').value='暂停';
+                document.getElementById('i_start').setAttribute("style", "display:none;");
+                document.getElementById('i_stop').setAttribute("style", "display:block;");
+            }else{
+                audio.pause();
+                document.getElementById('btnPlay').value='播放';
+                document.getElementById('i_start').setAttribute("style", "display:block;");
+                document.getElementById('i_stop').setAttribute("style", "display:none;");
             }
-        </script>
-    </p>
+        }
+    </script>
 </div>
 </body>
 </html>
