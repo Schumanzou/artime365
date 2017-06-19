@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>带本书给家乡的孩子</title>
+    <title>我是<?php echo $row->count_id?>位为山区孩子读诗的人！快来和我一起为爱读诗！</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
