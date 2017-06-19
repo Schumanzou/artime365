@@ -18,10 +18,8 @@
     </style>
 </head>
 <body>
+<img src='/static/images/weixinicon.jpg' style="display:none;" />
 <div>
-    <div style='margin:0 auto;display:none;'>
-        <img src='/static/images/weixinicon.jpg' />
-    </div>
     <div>
         <img src="/static/images/7_01.png" width="100%">
     </div>
