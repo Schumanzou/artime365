@@ -18,7 +18,9 @@
     </style>
 </head>
 <body>
-<img src="http://book.btv.com.cn/static/images/weixinicon.jpg">
+<div style='margin:0 auto;display:none;'>
+    <img src='http://book.btv.com.cn/static/images/weixinicon.jpg' />
+</div>
 <div>
     <div>
         <img src="/static/images/7_01.png" width="100%">
@@ -31,7 +33,7 @@
     </div>
     <div>
         <img src="/static/images/1_05.png" width="100%">
-    </div>
+    </div>cb
     <div>
         <img src="/static/images/1_06.png" width="100%">
     </div>
