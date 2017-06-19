@@ -19,7 +19,7 @@
 </head>
 <body>
 <div style='margin:0 auto;display:none;'>
-    <img src='http://book.btv.com.cn/static/images/weixinicon.jpg' />
+    <img src='http://book.btv.com.cn/static/images/wx.png' />
 </div>
 <div>
     <div>
