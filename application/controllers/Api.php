@@ -38,7 +38,7 @@ class Api extends MY_Controller{
 
         // 返回二维码
         // <img src="http://qr.topscan.com/api.php?bg=f3f3f3&fg=ff0000&gc=222222&el=l&w=200&m=10&text=http://www.topscan.com"/>
-        $content = file_get_contents("http://qr.topscan.com/api.php?w=200&m=10&text=http://cooperation.artime365.com/api/detail/".$rankingMd5);
+        $content = file_get_contents("http://qr.topscan.com/api.php?w=200&m=10&text=http://book.btv.com.cn/api/detail/".$rankingMd5);
 
         $upload_path      = './uploads/small/'.date('Ym').'/';
         if (!file_exists($upload_path)) {
