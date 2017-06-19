@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-<img src="/static/images/weixinicon.jpg">
+<img src="http://book.btv.com.cn/static/images/weixinicon.jpg">
 <div>
     <div>
         <img src="/static/images/7_01.png" width="100%">
