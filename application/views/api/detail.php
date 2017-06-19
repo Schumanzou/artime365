@@ -33,7 +33,7 @@
     </div>
     <div>
         <img src="/static/images/1_05.png" width="100%">
-    </div>cb
+    </div>
     <div>
         <img src="/static/images/1_06.png" width="100%">
     </div>
