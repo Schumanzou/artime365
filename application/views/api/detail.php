@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-<img src='/static/images/weixinicon.jpg' style="display:none;" />
+<img src="/static/images/weixinicon.jpg" width="300" height="300">
 <div>
     <div>
         <img src="/static/images/7_01.png" width="100%">
