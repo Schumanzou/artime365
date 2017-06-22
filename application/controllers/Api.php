@@ -3,12 +3,18 @@ ini_set('date.timezone','Asia/Shanghai');
 class Api extends MY_Controller{
 
     public $md5Key = '!QAZ2wsx';
+    public $baseUrl = 'http://book.btv.com.cn';
 
 	// 存储音频地址
 	function save(){
         $audioUrl = $this->input->post('record');
+        $sogou = $this->input->post('sogou');
         if (trim($audioUrl) == ''){
             $this->json(array(), -1, '数据不合法');
+        }
+        $type = 1;
+        if (trim($sogou) == '1'){
+            $type = 2;
         }
 
 		$this->load->database();
@@ -32,13 +38,14 @@ class Api extends MY_Controller{
             'url' => $audioUrl,
             'code_url' => $code_url,
             'count_id_md5' => $rankingMd5,
+            'type' => $type,
         );
 
         $this->db->insert('tbl_audio', $data);
 
         // 返回二维码
         // <img src="http://qr.topscan.com/api.php?bg=f3f3f3&fg=ff0000&gc=222222&el=l&w=200&m=10&text=http://www.topscan.com"/>
-        $content = file_get_contents("http://qr.topscan.com/api.php?w=200&m=10&text=http://book.btv.com.cn/api/detail/".$rankingMd5);
+        $content = file_get_contents("http://qr.topscan.com/api.php?w=200&m=10&text=".$this->baseUrl."/api/detail/".$rankingMd5);
 
         $upload_path      = './uploads/small/'.date('Ym').'/';
         if (!file_exists($upload_path)) {
@@ -48,6 +55,11 @@ class Api extends MY_Controller{
         $img_write_fd = fopen($pic_path, "w");
         fwrite($img_write_fd, $content);
         fclose($img_write_fd);
+
+        if ($type == 2){
+            $this->json(array('ranking'=>$ranking, "url"=>$this->baseUrl."/api/detail/".$rankingMd5));
+        }
+
         $this->json(array('ranking'=>$ranking, "url"=>"http://".$_SERVER['HTTP_HOST'].$code_url));
 	}
 
@@ -62,8 +74,29 @@ class Api extends MY_Controller{
         $this->load->database();
         $query = $this->db->get_where('tbl_audio', array('count_id_md5' => $id), 1, 0);
         $row = $query->row();
+
+        // 更新访问量
+        $this->db->set('pv', 'pv+1', FALSE);
+        $this->db->where('count_id_md5', $id);
+        $this->db->update('tbl_audio');
+
         $this->load->vars("row", $row);
         $this->load->view('api/detail');
+    }
+
+    /**
+     * 查询访问量接口
+     * @param $id
+     */
+    function getpv($id){
+        if (!$id){
+            $this->json(array(), -1, '不合法的请求');
+        }
+        $this->load->database();
+        $query = $this->db->get_where('tbl_audio', array('count_id_md5' => $id), 1, 0);
+        $row = $query->row();
+
+        $this->json(array('pv'=>$row->pv));
     }
 
 
