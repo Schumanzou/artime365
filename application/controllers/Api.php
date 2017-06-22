@@ -109,7 +109,7 @@ class Api extends MY_Controller{
             $this->json(array(), -1, '不合法的请求');
         }
         $this->load->database();
-        $query = $this->db->get_where('tbl_audio', array('count_id' => $id), 1, 0);
+        $query = $this->db->get_where('tbl_audio', array('count_id_md5' => $id), 1, 0);
         $row = $query->row();
         $this->load->vars("row", $row);
         $this->load->vars("host", 'http://'.$_SERVER['HTTP_HOST']);
