@@ -58,6 +58,7 @@ class Api extends MY_Controller{
 
         if ($type == 2){
             $this->json(array('ranking'=>$ranking,
+                            'sogou'=>'1',
                             "url"=>$this->baseUrl."/api/detail/".$rankingMd5,
                             "pv_url"=>$this->baseUrl."/api/pv/".$rankingMd5
             ));
