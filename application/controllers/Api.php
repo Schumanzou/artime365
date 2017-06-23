@@ -57,10 +57,16 @@ class Api extends MY_Controller{
         fclose($img_write_fd);
 
         if ($type == 2){
-            $this->json(array('ranking'=>$ranking, "url"=>$this->baseUrl."/api/detail/".$rankingMd5));
+            $this->json(array('ranking'=>$ranking,
+                            "url"=>$this->baseUrl."/api/detail/".$rankingMd5,
+                            "pv_url"=>$this->baseUrl."/api/pv/".$rankingMd5
+            ));
         }
 
-        $this->json(array('ranking'=>$ranking, "url"=>"http://".$_SERVER['HTTP_HOST'].$code_url));
+        $this->json(array('ranking'=>$ranking,
+                           "url"=>"http://".$_SERVER['HTTP_HOST'].$code_url,
+                           "pv_url"=>$this->baseUrl."/api/pv/".$rankingMd5,
+        ));
 	}
 
     /**
@@ -88,7 +94,7 @@ class Api extends MY_Controller{
      * 查询访问量接口
      * @param $id
      */
-    function getpv($id){
+    function pv($id){
         if (!$id){
             $this->json(array(), -1, '不合法的请求');
         }
