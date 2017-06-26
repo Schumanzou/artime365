@@ -28,7 +28,7 @@
     <div>
         <div class="f-l" style="width:30%"><img src="/static/images/10_02.png" width="100%"></div>
         <div class="f-l" style="width:70%;position: relative;"><img src="/static/images/10_03.png" width="100%">
-            <div style="font-size:140%;position: absolute;color: #ed3f00;letter-spacing:4px;font-weight: bold;bottom: 0;"><?php echo $row->count_id?></div>
+            <div style="font-size:140%;position: absolute;color: #ed3f00;letter-spacing:4px;font-weight: bold;top: 0;"><?php echo $row->count_id?></div>
         </div>
     </div>
 
@@ -37,8 +37,12 @@
     </div>
     <div>
         <div class="f-l" style="width:70%"><img src="/static/images/10_06.png" width="100%"></div>
-        <div class="f-l" style="width:30%;position: relative;"><img src="/static/images/10_07.png" width="100%">
-
+        <div class="f-l" style="width:30%;position: relative;">
+            <img src="/static/images/10_07.png" width="100%">
+            <div style="font-size:140%;position: absolute;color: #ed3f00;left: 50%;bottom: 0;">
+                <i class="icon-play-circled" id="i_start" onclick="playFn()"></i>
+                <i class="icon-pause-circled" id="i_stop" onclick="playFn()" style="display: none;"></i>
+            </div>
         </div>
     </div>
 
@@ -55,19 +59,19 @@
         <img src="/static/images/44_01.png" width="100%">
     </div>
     <div>
-        <img src="/static/images/44_02.png" width="100%">
+        <a href="http://u.eqxiu.com/s/nE0Nb675"><img src="/static/images/44_02.png" width="100%"></a>
     </div>
     <div>
         <img src="/static/images/44_03.png" width="100%">
     </div>
     <div>
-        <img src="/static/images/44_04.png" width="100%">
+        <a href="http://u.eqxiu.com/s/nE0Nb675"><img src="/static/images/44_04.png" width="100%"></a>
     </div>
     <div>
         <img src="/static/images/44_05.png" width="100%">
     </div>
     <div>
-        <img src="/static/images/44_06.png" width="100%">
+        <a href="http://u.eqxiu.com/s/nE0Nb675"><img src="/static/images/44_06.png" width="100%"></a>
     </div>
     <div>
         <img src="/static/images/44_07.png" width="100%">
