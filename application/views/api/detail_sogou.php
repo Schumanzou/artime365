@@ -71,10 +71,10 @@
         <img src="/static/images/44_05.png" width="100%">
     </div>
     <div>
-        <a href="http://u.eqxiu.com/s/nE0Nb675"><img src="/static/images/44_06.png" width="100%"></a>
+        <a href="http://u.eqxiu.com/s/nE0Nb675"><img src="/static/images/55_02.png" width="100%"></a>
     </div>
     <div>
-        <img src="/static/images/44_07.png" width="100%">
+        <img src="/static/images/55_02-02.png" width="100%">
     </div>
 
 
