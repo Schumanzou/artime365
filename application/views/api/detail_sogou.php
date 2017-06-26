@@ -23,14 +23,28 @@
 </div>
 <div>
     <div>
-        <img src="/static/images/1.jpg" width="100%">
+        <img src="/static/images/10_01.png" width="100%">
     </div>
-<!--    <div>-->
-<!--        <div class="f-l" style="width:30%"><img src="/static/images/7_02.png" width="100%"></div>-->
-<!--        <div class="f-l" style="width:70%;position: relative;"><img src="/static/images/7_03.png" width="100%">-->
-<!--            <div style="font-size:140%;position: absolute;color: #ed3f00;letter-spacing:4px;font-weight: bold;bottom: 0;">--><?php //echo $row->count_id?><!--</div>-->
-<!--        </div>-->
-<!--    </div>-->
+    <div>
+        <div class="f-l" style="width:30%"><img src="/static/images/10_02.png" width="100%"></div>
+        <div class="f-l" style="width:70%;position: relative;"><img src="/static/images/10_03.png" width="100%">
+            <div style="font-size:140%;position: absolute;color: #ed3f00;letter-spacing:4px;font-weight: bold;bottom: 0;"><?php echo $row->count_id?></div>
+        </div>
+    </div>
+
+    <div>
+        <img src="/static/images/10_05.png" width="100%">
+    </div>
+    <div>
+        <div class="f-l" style="width:70%"><img src="/static/images/10_06.png" width="100%"></div>
+        <div class="f-l" style="width:30%;position: relative;"><img src="/static/images/10_07.png" width="100%">
+            
+        </div>
+    </div>
+
+    <div>
+        <img src="/static/images/10_08.png" width="100%">
+    </div>
     <div>
         <img src="/static/images/2.jpg" width="100%">
     </div>
