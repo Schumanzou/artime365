@@ -88,7 +88,11 @@ class Api extends MY_Controller{
         $this->db->update('tbl_audio');
 
         $this->load->vars("row", $row);
-        $this->load->view('api/detail');
+        if ($row->type == '2'){
+            $this->load->view('api/detail_sogou');
+        }else {
+            $this->load->view('api/detail');
+        }
     }
 
     /**

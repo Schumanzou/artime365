@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>我是第<?php echo $row->count_id?>位为山区孩子读诗的人！快来和我一起为爱读诗！</title>
+    <title>我是第<?php echo $row->count_id?>位在搜狗浏览器为山区孩子读诗的人，快来和我一起为爱读诗！</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -23,45 +23,24 @@
 </div>
 <div>
     <div>
-        <img src="/static/images/7_01.png" width="100%">
+        <img src="/static/images/1.jpg" width="100%">
+    </div>
+<!--    <div>-->
+<!--        <div class="f-l" style="width:30%"><img src="/static/images/7_02.png" width="100%"></div>-->
+<!--        <div class="f-l" style="width:70%;position: relative;"><img src="/static/images/7_03.png" width="100%">-->
+<!--            <div style="font-size:140%;position: absolute;color: #ed3f00;letter-spacing:4px;font-weight: bold;bottom: 0;">--><?php //echo $row->count_id?><!--</div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <div>
+        <img src="/static/images/2.jpg" width="100%">
     </div>
     <div>
-        <div class="f-l" style="width:30%"><img src="/static/images/7_02.png" width="100%"></div>
-        <div class="f-l" style="width:70%;position: relative;"><img src="/static/images/7_03.png" width="100%">
-            <div style="font-size:140%;position: absolute;color: #ed3f00;letter-spacing:4px;font-weight: bold;bottom: 0;"><?php echo $row->count_id?></div>
-        </div>
+        <img src="/static/images/3.jpg" width="100%">
     </div>
     <div>
-        <img src="/static/images/1_05.png" width="100%">
+        <img src="/static/images/4.jpg" width="100%">
     </div>
-    <div>
-        <img src="/static/images/1_06.png" width="100%">
-    </div>
-    <div>
-        <div class="f-l" style="width:53%"><img src="/static/images/2_07.png" width="100%"></div>
-        <div class="f-l" style="width:47%;position: relative;">
-            <img src="/static/images/2_08.png" width="100%">
-            <div style="font-size:140%;position: absolute;color: #ed3f00;left: 50%;bottom: 0;">
-                <i class="icon-play-circled" id="i_start" onclick="playFn()"></i>
-                <i class="icon-pause-circled" id="i_stop" onclick="playFn()" style="display: none;"></i>
-            </div>
-        </div>
-    </div>
-    <div>
-        <img src="/static/images/1_09.png" width="100%">
-    </div>
-    <div>
-        <a href="http://u.eqxiu.com/s/nE0Nb675"><img src="/static/images/1_10.png" width="100%"></a>
-    </div>
-    <div>
-        <img src="/static/images/1_11.png" width="100%">
-    </div>
-    <div>
-        <a href="http://u.eqxiu.com/s/nE0Nb675"><img src="/static/images/1_12.png" width="100%"></a>
-    </div>
-    <div>
-        <img src="/static/images/1_13.png" width="100%">
-    </div>
+    
 
     <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
     </audio>
