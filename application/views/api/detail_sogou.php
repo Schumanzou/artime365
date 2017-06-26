@@ -38,7 +38,7 @@
     <div>
         <div class="f-l" style="width:70%"><img src="/static/images/10_06.png" width="100%"></div>
         <div class="f-l" style="width:30%;position: relative;"><img src="/static/images/10_07.png" width="100%">
-            
+
         </div>
     </div>
 
@@ -52,7 +52,25 @@
         <img src="/static/images/3.jpg" width="100%">
     </div>
     <div>
-        <img src="/static/images/4.jpg" width="100%">
+        <img src="/static/images/44_01.png" width="100%">
+    </div>
+    <div>
+        <img src="/static/images/44_02.png" width="100%">
+    </div>
+    <div>
+        <img src="/static/images/44_03.png" width="100%">
+    </div>
+    <div>
+        <img src="/static/images/44_04.png" width="100%">
+    </div>
+    <div>
+        <img src="/static/images/44_05.png" width="100%">
+    </div>
+    <div>
+        <img src="/static/images/44_06.png" width="100%">
+    </div>
+    <div>
+        <img src="/static/images/44_07.png" width="100%">
     </div>
 
 
