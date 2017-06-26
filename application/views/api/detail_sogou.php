@@ -39,7 +39,7 @@
         <div class="f-l" style="width:70%"><img src="/static/images/10_06.png" width="100%"></div>
         <div class="f-l" style="width:30%;position: relative;">
             <img src="/static/images/10_07.png" width="100%">
-            <div style="font-size:140%;position: absolute;color: #ed3f00;left: 50%;bottom: 0;">
+            <div style="position: absolute;color: #ed3f00;left: 0;bottom: 0;">
                 <i class="icon-play-circled" id="i_start" onclick="playFn()"></i>
                 <i class="icon-pause-circled" id="i_stop" onclick="playFn()" style="display: none;"></i>
             </div>
