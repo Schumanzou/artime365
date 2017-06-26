@@ -40,7 +40,7 @@
     <div>
         <img src="/static/images/4.jpg" width="100%">
     </div>
-    
+
 
     <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
     </audio>
