@@ -59,19 +59,19 @@
         <img src="/static/images/44_01.png" width="100%">
     </div>
     <div>
-        <a href="http://u.eqxiu.com/s/nE0Nb675"><img src="/static/images/44_02.png" width="100%"></a>
+        <a href="SogouMSE://gotoBTVPoem"><img src="/static/images/44_02.png" width="100%"></a>
     </div>
     <div>
         <img src="/static/images/44_03.png" width="100%">
     </div>
     <div>
-        <a href="http://u.eqxiu.com/s/nE0Nb675"><img src="/static/images/44_04.png" width="100%"></a>
+        <a href="http://c.eqxiu.com/s/PBSbKfRo"><img src="/static/images/44_04.png" width="100%"></a>
     </div>
     <div>
         <img src="/static/images/44_05.png" width="100%">
     </div>
     <div>
-        <a href="http://u.eqxiu.com/s/nE0Nb675"><img src="/static/images/55_02.png" width="100%"></a>
+        <a href="http://c.eqxiu.com/s/PBSbKfRo"><img src="/static/images/55_02.png" width="100%"></a>
     </div>
     <div>
         <img src="/static/images/55_02-02.png" width="100%">
