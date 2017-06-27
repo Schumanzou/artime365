@@ -102,7 +102,7 @@ class Api extends MY_Controller{
         // 生成短域名
         $this->load->library('curl');
         $jsonData = $this->curl->simple_get('http://api.t.sina.com.cn/short_url/shorten.json?source=3271760578&url_long=http://www.douban.com/note/249723561/');
-        $res = json_decode($jsonData);
+        $res = json_decode($jsonData, true);
         print_r($res[0]['url_short']);
         exit;
     }
