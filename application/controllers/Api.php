@@ -101,7 +101,9 @@ class Api extends MY_Controller{
     function shorturl(){
         // 生成短域名
         $this->load->library('curl');
-        echo $this->curl->simple_get('http://api.t.sina.com.cn/short_url/shorten.json?source=3271760578&url_long=http://www.douban.com/note/249723561/');
+        $jsonData = $this->curl->simple_get('http://api.t.sina.com.cn/short_url/shorten.json?source=3271760578&url_long=http://www.douban.com/note/249723561/');
+        $res = json_decode($jsonData);
+        print_r($res);
         exit;
     }
 
