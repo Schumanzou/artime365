@@ -95,6 +95,13 @@ class Api extends MY_Controller{
         }
     }
 
+    function shorturl(){
+        // 生成短域名
+        $this->load->library('curl');
+        echo $this->curl->simple_get('http://example.com/');
+        exit;
+    }
+
     /**
      * 查询访问量接口
      * @param $id

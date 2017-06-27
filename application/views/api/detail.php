@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>我是第<?php echo $row->count_id?>位为山区孩子读诗的人！快来和我一起为爱读诗！</title>
     <meta name="renderer" content="webkit">
+    <meta name="description" content="你为山区的孩子读诗，我为山区的孩子送书" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
