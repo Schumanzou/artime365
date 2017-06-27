@@ -34,20 +34,21 @@ class Api extends MY_Controller{
         $code_url = "/uploads/small/".date('Ym').'/'.$file_name;
         $rankingMd5 = md5($code_url.$this->md5Key);
         $html5_url = $this->baseUrl."/api/detail/".$rankingMd5;
+        $short_url = $this->shorturl($html5_url);
         $data = array(
             'count_id' => $ranking,
             'url' => $audioUrl,
             'code_url' => $code_url,
             'count_id_md5' => $rankingMd5,
             'type' => $type,
-            'shorturl' => $this->shorturl($html5_url),
+            'shorturl' => $short_url,
         );
 
         $this->db->insert('tbl_audio', $data);
 
         // 返回二维码
         // <img src="http://qr.topscan.com/api.php?bg=f3f3f3&fg=ff0000&gc=222222&el=l&w=200&m=10&text=http://www.topscan.com"/>
-        $content = file_get_contents("http://qr.topscan.com/api.php?w=200&m=10&text=".$html5_url);
+        $content = file_get_contents("http://qr.topscan.com/api.php?w=200&m=10&text=".$short_url);
 
         $upload_path      = './uploads/small/'.date('Ym').'/';
         if (!file_exists($upload_path)) {
@@ -61,7 +62,7 @@ class Api extends MY_Controller{
         if ($type == 2){
             $this->json(array('ranking'=>$ranking,
                             'sogou'=>'1',
-                            "url"=>$html5_url,
+                            "url"=>$short_url,
                             "pv_url"=>$this->baseUrl."/api/pv/".$rankingMd5
             ));
         }
