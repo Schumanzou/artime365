@@ -106,6 +106,7 @@
                 ifr.src = "SogouMSE://gotoBTVPoem"; /***打开app的协议，有ios同事提供***/
                 ifr.style.display = "none";
                 document.body.appendChild(ifr);
+                window.location.href = "SogouMSE://gotoBTVPoem";
                 window.setTimeout(function(){
                     document.body.removeChild(ifr);
                     window.location.href = "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8"; /***下载app的地址***/
