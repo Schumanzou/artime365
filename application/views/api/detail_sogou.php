@@ -60,7 +60,7 @@
         <img src="/static/images/44_01.png" width="100%">
     </div>
     <div>
-        <a href="SogouMSE://gotoBTVPoem"><img src="/static/images/44_02.png" width="100%"></a>
+        <a href="javascript:void(-1);" onclick="linkGo();"><img src="/static/images/44_02.png" width="100%"></a>
     </div>
     <div>
         <img src="/static/images/44_03.png" width="100%">
@@ -98,6 +98,34 @@
                 document.getElementById('i_stop').setAttribute("style", "display:none;");
             }
         }
+    </script>
+    <script language="javascript">
+        function linkGo(){
+            if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
+                var loadDateTime = new Date();
+                window.setTimeout(function() {
+                        var timeOutDateTime = new Date();
+                        if (timeOutDateTime - loadDateTime < 5000) {
+                            window.location = "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8";
+                        } else {
+                            window.close();
+                        }
+                    },
+                    25);
+                window.location = "SogouMSE://gotoBTVPoem";
+            } else if (navigator.userAgent.match(/android/i)) {
+                var state = null;
+                try {
+                    state = window.open("SogouMSE://gotoBTVPoem", '_blank');
+                } catch(e) {}
+                if (state) {
+                    window.close();
+                } else {
+                    window.location = "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8";
+                }
+            }
+        }
+
     </script>
 </div>
 </body>
