@@ -101,16 +101,17 @@
     </script>
     <script language="javascript">
         function linkGo(){
+
+
             if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
-                var ifr = document.createElement("iframe");
-                ifr.src = "SogouMSE://gotoBTVPoem"; /***打开app的协议，有ios同事提供***/
-                ifr.style.display = "none";
-                document.body.appendChild(ifr);
-                window.location.href = "SogouMSE://gotoBTVPoem";
-                window.setTimeout(function(){
-                    document.body.removeChild(ifr);
-                    window.location.href = "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8"; /***下载app的地址***/
-                },2000);
+                var loadDateTime = new Date(),
+                setTimeout(function () {
+                    var timeOutDateTime = new Date();
+                    if (!loadDateTime || timeOutDateTime - loadDateTime < 1010) {
+                        window.location = "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8";
+                    }
+                },1000);
+                window.location = 'SogouMSE://gotoBTVPoem';
 
             } else if (navigator.userAgent.match(/android/i)) {
                 alert("暂只支持ios");
