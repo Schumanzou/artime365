@@ -105,10 +105,10 @@
                 var loadDateTime = new Date();
                 setTimeout(function () {
                     var timeOutDateTime = new Date();
-                    if (!loadDateTime || timeOutDateTime - loadDateTime <1210) {
+                    if (!loadDateTime || timeOutDateTime - loadDateTime <3210) {
                         window.location = "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8";
                     }
-                },1200);
+                },3200);
                 window.location = 'SogouMSE://gotoBTVPoem';
 
             } else if (navigator.userAgent.match(/android/i)) {
