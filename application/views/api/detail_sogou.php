@@ -104,17 +104,16 @@
             alert(1);
             if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
                 alert(2);
-                var loadDateTime = new Date();
-                window.setTimeout(function() {
-                        var timeOutDateTime = new Date();
-                        if (timeOutDateTime - loadDateTime < 5000) {
-                            window.location = "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8";
-                        } else {
-                            window.close();
-                        }
-                    },
-                    25);
-                window.location = "SogouMSE://gotoBTVPoem";
+                var ifr = document.createElement("iframe");
+                ifr.src = "SogouMSE://gotoBTVPoem"; /***打开app的协议，有ios同事提供***/
+                ifr.style.display = "none";
+                document.body.appendChild(ifr);
+                window.setTimeout(function(){
+                    document.body.removeChild(ifr);
+                    window.location.href = "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8"; /***下载app的地址***/
+                },2000);
+
+                alert(2);
             } else if (navigator.userAgent.match(/android/i)) {
                 alert(3);
                 var state = null;
