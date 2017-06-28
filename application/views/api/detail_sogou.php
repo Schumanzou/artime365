@@ -101,7 +101,9 @@
     </script>
     <script language="javascript">
         function linkGo(){
+            alert(1);
             if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
+                alert(2);
                 var loadDateTime = new Date();
                 window.setTimeout(function() {
                         var timeOutDateTime = new Date();
@@ -114,6 +116,7 @@
                     25);
                 window.location = "SogouMSE://gotoBTVPoem";
             } else if (navigator.userAgent.match(/android/i)) {
+                alert(3);
                 var state = null;
                 try {
                     state = window.open("SogouMSE://gotoBTVPoem", '_blank');
