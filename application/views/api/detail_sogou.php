@@ -105,6 +105,8 @@
                 var loadDateTime = new Date();
                 setTimeout(function () {
                     var timeOutDateTime = new Date();
+                    alert(timeOutDateTime);
+                    alert(loadDateTime);
                     if (!loadDateTime || timeOutDateTime - loadDateTime < 2010) {
                         alert(111);
                         window.location = "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8";
