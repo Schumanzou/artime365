@@ -105,14 +105,9 @@
                 var loadDateTime = new Date();
                 setTimeout(function () {
                     var timeOutDateTime = new Date();
-                    console.log(timeOutDateTime);
-                    console.log(loadDateTime);
                     if (!loadDateTime || timeOutDateTime - loadDateTime <1210) {
-                        console.log(timeOutDateTime);
                         location.href = "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8";
                     }
-                    console.log(timeOutDateTime);
-                    console.log(loadDateTime);
                 },1200);
                 location.href = 'SogouMSE://gotoBTVPoem';
 
