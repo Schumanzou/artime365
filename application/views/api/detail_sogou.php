@@ -109,8 +109,8 @@
                         window.location = "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8";
                     }
                 },3200);
-                //window.location = 'SogouMSE://gotoBTVPoem';
-                window.location = 'http://www.baidu.com';
+                window.location = 'SogouMSE://gotoBTVPoem';
+                //window.location = 'http://www.baidu.com';
 
             } else if (navigator.userAgent.match(/android/i)) {
                 alert("暂只支持ios");
