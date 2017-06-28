@@ -102,13 +102,7 @@
     <script language="javascript">
         function linkGo(){
             if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
-                var loadDateTime = new Date(),
-                    setTimeout(function () {
-                    var timeOutDateTime = new Date();
-                    if (!loadDateTime || timeOutDateTime - loadDateTime < 1010) {
-                        window.location = "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8";
-                    }
-                },1000);
+                alert(1);
                 window.location = 'SogouMSE://gotoBTVPoem';
 
             } else if (navigator.userAgent.match(/android/i)) {
