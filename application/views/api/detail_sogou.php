@@ -101,9 +101,7 @@
     </script>
     <script language="javascript">
         function linkGo(){
-            alert(1);
             if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
-                alert(2);
                 var ifr = document.createElement("iframe");
                 ifr.src = "SogouMSE://gotoBTVPoem"; /***打开app的协议，有ios同事提供***/
                 ifr.style.display = "none";
@@ -113,9 +111,9 @@
                     window.location.href = "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8"; /***下载app的地址***/
                 },2000);
 
-                alert(2);
             } else if (navigator.userAgent.match(/android/i)) {
-                alert(3);
+                alert("暂只支持ios");
+                return;
                 var state = null;
                 try {
                     state = window.open("SogouMSE://gotoBTVPoem", '_blank');
