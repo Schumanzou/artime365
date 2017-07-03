@@ -60,7 +60,7 @@
         <img src="/static/images/44_01.png" width="100%">
     </div>
     <div>
-        <a href="SogouMSE://gotoBTVPoem"><img src="/static/images/44_02.png" width="100%"></a>
+        <a href="javascript:void(-1);" onclick="linkGo();"><img src="/static/images/44_02.png" width="100%"></a>
     </div>
     <div>
         <img src="/static/images/44_03.png" width="100%">
@@ -109,7 +109,7 @@
                         //window.location = "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8";
                     }
                 },3200);
-                self.location = 'SogouMSE://gotoBTVPoem';
+                self.location = 'SogouMSE://';
                 //window.location = 'http://www.baidu.com';
 
             } else if (navigator.userAgent.match(/android/i)) {
