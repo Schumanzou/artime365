@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/static/css/x-admin.css" media="all">
     <link rel="stylesheet" href="/static/css/app.css" media="all">
     <link rel="stylesheet" href="/static/lib/fontello/css/fontello.css" media="all">
+    <script type="text/javascript" src="/static/js/tool-nativeSchema.js"></script>
     <style type="text/css">
         .icon-play-circled, .icon-pause-circled {font-size: 200%;}
     </style>
@@ -60,7 +61,7 @@
         <img src="/static/images/44_01.png" width="100%">
     </div>
     <div>
-        <a href="javascript:void(-1);" onclick="linkGo();"><img src="/static/images/44_02.png" width="100%"></a>
+        <a href="javascript:void(-1);" onclick="linkGo2();"><img src="/static/images/44_02.png" width="100%"></a>
     </div>
     <div>
         <img src="/static/images/44_03.png" width="100%">
@@ -79,8 +80,10 @@
     </div>
 
 
-    <!--<audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
-    </audio>
+    <div style="display:none">
+        <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
+        </audio>
+    </div>
     <input type="hidden" id="btnPlay" value="播放"/>
     　　<script>
         function playFn(){
@@ -98,7 +101,24 @@
                 document.getElementById('i_stop').setAttribute("style", "display:none;");
             }
         }
-    </script>-->
+    </script>
+
+    <script>
+        function linkGo2() {
+            loadSchema({
+                schema: "SogouMSE://gotoBTVPoem",
+                protocal: "sogoumse",
+                loadWaiting: "5000",
+                failUrl: "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8",
+                apkInfo: {
+                    PKG: "sogou.mobile.explorer",
+                    CATEGORY: "android.intent.category.DEFAULT",
+                    ACTION: "android.intent.action.VIEW"
+                }
+            });
+        }
+    </script>
+
     <script language="javascript">
         function linkGo(){
             if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {

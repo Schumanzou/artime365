@@ -64,8 +64,11 @@
         <img src="/static/images/1_13.png" width="100%">
     </div>
 
-    <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
-    </audio>
+
+    <div style="display:none">
+        <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
+        </audio>
+    </div>
     <input type="hidden" id="btnPlay" value="播放"/>
     　　<script>
         function playFn(){
