@@ -105,7 +105,7 @@
 
     <script>
         function linkGo2() {
-            loadSchema({
+            nativeSchema.loadSchema({
                 schema: "SogouMSE://gotoBTVPoem",
                 protocal: "sogoumse",
                 loadWaiting: "5000",
