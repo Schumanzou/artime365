@@ -79,7 +79,7 @@
     </div>
 
 
-    <audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
+    <!--<audio id="audio" src="<?php echo $row->url?>" controls="controls" style="display: none">
     </audio>
     <input type="hidden" id="btnPlay" value="播放"/>
     　　<script>
@@ -98,7 +98,7 @@
                 document.getElementById('i_stop').setAttribute("style", "display:none;");
             }
         }
-    </script>
+    </script>-->
     <script language="javascript">
         function linkGo(){
             if (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i)) {
