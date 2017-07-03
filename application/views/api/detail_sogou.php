@@ -60,7 +60,7 @@
         <img src="/static/images/44_01.png" width="100%">
     </div>
     <div>
-        <a href="javascript:void(-1);" onclick="linkGo();"><img src="/static/images/44_02.png" width="100%"></a>
+        <a href="SogouMSE://gotoBTVPoem"><img src="/static/images/44_02.png" width="100%"></a>
     </div>
     <div>
         <img src="/static/images/44_03.png" width="100%">
