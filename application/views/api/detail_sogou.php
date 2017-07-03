@@ -106,7 +106,7 @@
     <script>
         function linkGo2() {
             nativeSchema.loadSchema({
-                schema: "SogouMSE://gotoBTVPoem",
+                schema: "gotoBTVPoem",
                 protocal: "sogoumse",
                 loadWaiting: "5000",
                 failUrl: "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8",
