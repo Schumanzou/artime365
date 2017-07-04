@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>sogou mse</title>
+</head>
+<body>
+<!-- 用于唤起搜狗浏览器客户端，未安装则自动下载(Android)或跳转AppStore(iOS) -->
+<script>
+    !function(a,b){"function"==typeof define&&define.amd?define([],b):"object"==typeof exports?module.exports=b():a.nativeSchema=b()}(this,function(){var a={isAndroid:function(){return navigator.userAgent.match(/Android/i)?!0:!1},isMobileQQ:function(){var a=navigator.userAgent;return/(iPad|iPhone|iPod).*? (IPad)?QQ\/([\d\.]+)/.test(a)||/\bV1_AND_SQI?_([\d\.]+)(.*? QQ\/([\d\.]+))?/.test(a)},isIOS:function(){return navigator.userAgent.match(/iPhone|iPad|iPod/i)?!0:!1},isWx:function(){return navigator.userAgent.match(/micromessenger/i)?!0:!1}},b={PROTOCAL:"sogoumse",HOME:"http://mse.sogou.com/",FAILBACK:{ANDROID:"http://mse.sogou.com/getmse.php?f=dl",IOS:"https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi/id548608066?mt=8"},APK_INFO:{PKG:"sogou.mobile.explorer",CATEGORY:"android.intent.category.DEFAULT",ACTION:"android.intent.action.VIEW"},LOAD_WAITING:3e3},c=window.navigator.userAgent,d=(c.match(/Chrome\/([\d.]+)/)||c.match(/CriOS\/([\d.]+)/))&&a.isAndroid()&&!a.isMobileQQ()&&!a.isWx();return{mixinConfig:function(c){c&&(b.PROTOCAL=c.protocal||b.PROTOCAL,b.schema=c.schema||b.HOME,b.LOAD_WAITING=c.loadWaiting||b.LOAD_WAITING,a.isIOS()?b.FAILBACK.IOS=c.failUrl||b.FAILBACK.IOS:a.isAndroid()&&(b.FAILBACK.ANDROID=c.failUrl||b.FAILBACK.ANDROID,b.APK_INFO=c.apkInfo||b.APK_INFO))},generateSchema:function(a){window.location.href;var d=a;return a||(d=b.HOME),d=b.PROTOCAL+"://"+d},loadSchema:function(c){var e,f,g,h,i,j,l;this.mixinConfig(c),e=this.generateSchema(b.schema),f=document.createElement("iframe"),g=document.createElement("a"),h=document.body,i=null,g.style.cssText=f.style.cssText="display:none;width:0px;height:0px;",a.isIOS()||d?(g.href=e,h.appendChild(g),g.click()):(h.appendChild(f),f.src=e),j=Date.now(),i=setTimeout(function(){document.hidden||document.webkitHidden||(Date.now()-j>b.LOAD_WAITING+200?clearTimeout(i):window.location.href=a.isIOS()?b.FAILBACK.IOS:b.FAILBACK.ANDROID)},b.LOAD_WAITING),l=function(){var a=document.hidden||document.webkitHidden;a&&clearTimeout(i)},document.addEventListener("visibilitychange",l,!1),document.addEventListener("webkitvisibilitychange",l,!1),window.addEventListener("pagehide",function(){clearTimeout(i)},!1)}}});
+
+    nativeSchema.loadSchema({
+        schema: "gotoBTVPoem",
+        protocal: "sogoumse",
+        loadWaiting: "5000",
+        failUrl: "https://itunes.apple.com/cn/app/sou-gou-liu-lan-qi-qiang-piao/id548608066?l=en&mt=8",
+        apkInfo: {
+            PKG: "sogou.mobile.explorer",
+            CATEGORY: "android.intent.category.DEFAULT",
+            ACTION: "android.intent.action.VIEW"
+        }
+    });
+</script>
+</body>
+</html>
