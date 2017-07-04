@@ -61,7 +61,7 @@
         <img src="/static/images/44_01.png" width="100%">
     </div>
     <div>
-        <a href="/html5/callmse.html"><img src="/static/images/44_02.png" width="100%"></a>
+        <a href="http://share.mse.sogou.com/page/callmse.html"><img src="/static/images/44_02.png" width="100%"></a>
     </div>
     <div>
         <img src="/static/images/44_03.png" width="100%">
